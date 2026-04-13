@@ -1,0 +1,19 @@
+def p(x,a):
+    somme=0
+    n=len(a)
+    for i in range(n):
+        #A FAIRE
+    return somme
+
+nb_points_trace=100
+x_trace=numpy.zeros(nb_points_trace)
+y_trace=numpy.zeros(nb_points_trace)
+x_min=-1
+x_max=2
+dx=(x_max-x_min)/(nb_points_trace-1)
+for i in range(nb_points_trace):
+    xi=x_min+i*dx
+    x_trace[i]=xi
+    y_trace[i]=p(xi,coeff)
+pyplot.plot(x_trace ,y_trace,'-k')
+pyplot.plot(x_interp ,y_interp,'ro')
